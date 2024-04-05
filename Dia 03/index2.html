@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula sobre Formulários HTML</title>
+</head>
+<body>
+  <main>
+    <!-- <form onsubmit="return MinhaAcaoJS(this)"> (Passando esse envio utilizando uma funcão no JS) -->
+    <!-- <form method="post" action="api/posturl"> (A forma mais segura de enviar os dados usando o método POST, que carrega as informacões no body, no corpo da requisicão HTTP)-->
+    <form action="api/posturl"><!--Uma das formas de enviar o formulário, dentro da URL (O default do form é GET)-->
+      <div class="nome">
+          <label for="idtexto">Nome:</label> <!--Serve para interligar com o input-->
+          <input type="text" id="idtexto" name="idtexto">
+      </div>
+      <div class="password">
+          <label for="idpassword">Senha:</label> <!--Serve para interligar com o input-->
+          <input type="password" id="idpassword" name="idpassword">        
+      </div>
+      <div class="data">
+          <label for="iddate">Data:</label> <!--Serve para interligar com o input-->
+          <input type="date" id="iddate" name="iddate">        
+      </div>
+      <div class="arquivo">
+          <label for="idfile">Arquivo:</label> <!--Serve para interligar com o input-->
+          <input type="file" id="idfile" name="idfile">        
+      </div>
+      <div class="email">
+          <label for="idemail">Email:</label> <!--Serve para interligar com o input-->
+          <input type="email" id="idemail" name="idemail">        
+      </div>   
+      <div class="checkbox"><!--Pode permitir múltiplas escolhas-->
+          <label for="idcheck1">Check 1</label> <!--Serve para interligar com o input-->
+          <input type="checkbox" id="idcheck1" name="idcheck" value="Check 1">
+          <label for="idcheck2">Check 2</label> <!--Serve para interligar com o input-->
+          <input type="checkbox" id="idcheck2" name="idcheck" value="Check 2">   
+          <label for="idcheck3">Check 3</label> <!--Serve para interligar com o input-->
+          <input type="checkbox" id="idcheck3" name="idcheck" value="Check 3">                           
+    </div>
+    <div class="radio"><!--Recomenda-se que seja para apenas uma escolha, se faz necessário que o id name seja o mesmo para que isso funcione-->
+        <label for="idradio1">Radio 1</label> <!--Serve para interligar com o input-->
+        <input type="radio" id="idradio1" name="idradio" value="Radio 1">
+        <label for="idradio2">Radio 2</label> <!--Serve para interligar com o input-->
+        <input type="radio" id="idradio2" name="idradio" value="Radio 2">
+        <label for="idradio3">Radio 2</label> <!--Serve para interligar com o input-->
+        <input type="radio" id="idradio3" name="idradio" value="Radio 2">                               
+    </div>
+    <div class="caixadetexto">
+        <label for="idcaixa">Caixa de Texto:</label> <!--Serve para interligar com o input-->
+        <textarea id="idcaixa" name="idcaixa" rows="5" cols="50"></textarea>                         
+    </div>
+    <div class="selecao">
+        <select name="selecao">
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="js">JavaScript</option>
+        </select>                    
+    </div>       
+    <div class="envioformulario">
+        <input type="submit" value="Enviar Formulário">
+        <input type="button" onclick="alert('Você será redirecionado')" value="Voltar">
+        <input type="reset" value="Limpar">
+    </div>
+    </form>
+  </main>
+  </body>
+</html>
