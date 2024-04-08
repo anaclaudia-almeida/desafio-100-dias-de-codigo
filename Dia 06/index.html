@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    li {
+        color: red; 
+      }
+      
+      li li {
+      color: green;
+    }
+      
+      #lista-01 li {      
+      color: ligthblue;
+      }
+      
+      .fundo-verde li {
+      background-color: lightgreen;
+      }
+      
+      .fundo-azul li {
+      background-color: lightblue;
+      }
+      
+      .fundo-verde #sublista01 li {
+      color: black;  
+      }
+
+  </style>
+  <title>Aula sobre Fundamentos CSS - Combinadores</title>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li class="fundo-verde" id="lista-01">
+      <div>Item 1</div>
+      <ul id="sublista01">
+      <li>Subitem A</li>
+      <li>Subitem B</li>
+    </ul>
+    </li>
+    
+      <li class="fundo-verde" id="lista-02">
+      <div>Item 2</div>
+      <ul>
+      <li>Subitem A</li>
+      <li>Subitem B</li>
+    </ul>
+    </li>    
+
+    <li class="fundo-azul" id="lista-03">
+      <div>Item 3</div>
+      <ul>
+      <li>Subitem A</li>
+      <li>Subitem B</li>
+    </ul>
+    </li>
+  </nav>
+
+  
+</body>
+</html>
