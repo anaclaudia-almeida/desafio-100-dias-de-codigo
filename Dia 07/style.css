@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  font-family:"Roboto Condensed", sans-serif;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+  font-size: 62.5%; /*Ajuda no redimensionamento e responsividade do site*/
+  overflow-x: hidden; /*Sem barra de rolagem horizontal*/
+}
+
+/* ESTILIZANDO O MENU */
+
+.content {
+  width: 100vw;
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #EC7E18;
+  position: fixed; /*Para manter o menu fixo*/
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo h3 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.logo img {
+  width: 90%;
+  height: 90%;
+}
+
+.content .list-menu {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content .list-menu li a {
+  padding: 3rem 1rem 3rem 1rem;
+  color: #ffffff;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  transition: all 200ml ease-in;
+}
+
+.content .list-menu li a:hover {
+  border-bottom: 2px solid;
+}
+
+/* ESTILIZANDO A FIRST SECTION */
+
+
+.first-section {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(29, 29, 29, 0.8),rgba(29, 29, 29, 0.8)), url(./images/background-pizzaria.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-position-y: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-section .conteudo-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.first-section h1 {
+  font-size: 5.5rem;
+  color: #ffffff;
+}
+
+.first-section h2 {
+  font-size: 4.0rem;
+  color: #ffffff;
+}
+
+.first-section h2 span {
+  color: #EC7E18;
+}
+
+.first-section button {
+  background-color: #EC7E18;
+  height: 6.0rem;
+  width: 20rem ;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  transition: all 200ms ease-in;
+  border-style: none;
+}
+
+.first-section button:hover {
+  background-color: #ec7e18be;
+  color: #ffffff;
+}  
+
+/* ESTILIZANDO O SOBRE NÓS */
+
+.sobre-nos {
+  background-color: #1F1E1f;
+  width: 100%;
+  padding-bottom: 5rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-nos img {
+  width: 400px;
+  height: 400px;
+  margin-top: 10rem;
+  margin-left: 10rem;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentsobre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentsobre h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.contentsobre p {
+  font-size: 2rem;
+  max-width: 600px;
+  text-align: justify;
+}
+
+/* ESTILIZANDO O CARDÁPIO*/
+
+.cardapio {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f1e1fe6;
+}
+
+.cardapio h2 {
+  font-size: 4rem;
+  color: #1F1E1f;
+  text-transform: uppercase;
+  margin-top: 30px;
+  color: #ffffff;
+}
+
+.itens-cardapio {
+  width: 80%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  
+}
+
+.itens-cardapio .informacoes {
+  background-color: #1F1E1f;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.itens-cardapio img {
+  width: 100%;
+  height: 250px;
+}
+
+.informacoes {
+  color: #ffffff;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.informacoes h3 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #EC7E18;
+}
+
+.informacoes h4 {
+  font-size: 1.3rem;
+}
+
+.informacoes button {
+  width: 12rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background-color: #EC7E18;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.informacoes button:hover {
+
+}
+
+
+
