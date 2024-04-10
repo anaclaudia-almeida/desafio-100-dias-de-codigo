@@ -220,22 +220,30 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 
 .informacoes h3 {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #EC7E18;
+  text-align: center;
+  word-wrap:normal;
 }
 
 .informacoes h4 {
-  font-size: 1.3rem;
+  width: 100%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 4rem;
 }
 
 .informacoes button {
-  width: 12rem;
-  height: 3rem;
+  width: 20rem;
+  height: 4rem;
   border-radius: 0.5rem;
   cursor: pointer;
   background-color: #EC7E18;
@@ -244,7 +252,8 @@ html {
 }
 
 .informacoes button:hover {
-
+  background-color: #ec7e18c0;
+  color: #ffffff;
 }
 
 
