@@ -1,0 +1,36 @@
+.container {
+  border: 1px solid black;
+  padding: 10px;
+  height: 600px;
+  margin-bottom: 20px;
+  color: white;
+  background-color: coral;
+
+  display: grid;
+  grid-template-columns: max-content;
+}
+
+
+.item-01 {
+  background-color: blue;
+}
+
+.item-02 {
+  background-color:chocolate;
+}
+
+.item-03 {
+  background-color: burlywood;
+}
+
+.item-04 {
+  background-color: chartreuse;
+}
+
+.item-05 {
+  background-color: brown;
+}
+
+.item-06 {
+  background-color:blueviolet;
+}
