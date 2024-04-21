@@ -1,0 +1,22 @@
+.container {
+  border: 2px solid;
+  
+  display: grid;
+  grid-template-columns: 
+  repeat(2, 1fr);
+  grid-template-rows: repeat(3, 100px)
+}
+
+.item {
+  text-align: center;
+  background-color: deepskyblue;
+}
+
+.selected {
+  background-color: deeppink;
+  grid-column-start:2;
+  grid-column-end: 3;
+
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
