@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 10px;
+  
+  display: grid;
+  grid-template: repeat(3, 200px) / repeat(3, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+
+}
+
+.item {
+  background: palevioletred;
+  border: 1px solid black;
+}
